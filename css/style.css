@@ -1,0 +1,360 @@
+@font-face {
+  font-family: Yuehei;
+  src: url('../font/Yuehei.otf');
+}
+@font-face {
+  font-family: Lihei;
+  src: url('../font/Lihei.otf');
+}
+
+body, p {
+  padding: 0;
+  margin: 0;
+  font-family: Yuehei;
+}
+
+.clear {
+  clear: both;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.title {
+  margin: 111px auto 75px auto;
+  text-align: center;
+}
+
+.title .heading {
+  line-height: 54px;
+  font-size: 40px;
+  color: rgba(0, 0 , 0, 1);
+  margin-bottom: 0;
+  font-family: Lihei;
+}
+
+.title .vice-heading {
+  line-height: 23px;
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 0;
+  font-family: Yuehei;
+}
+
+/**********************************************/
+
+.wrapper-home {
+  /*height: 729px;*/
+  /*background-image: url("../img/header.gif");
+  background-size: 100% auto;*/
+  position: relative;
+  overflow: hidden;
+}
+.home-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+.nav a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+.nav a:hover {
+  background: rgba(0, 0, 0, 0.1) !important;
+  
+}
+
+.nav {
+  margin: 77px auto 0 auto;
+}
+.nav li {
+  padding: 0;
+}
+
+.icon-bar {
+  background: #fff;
+}
+
+.main-title {
+  line-height: 76px;
+  color: #fff;
+  font-family: Lihei;
+  font-size: 55px;
+  text-align: center;
+  margin: 186px auto 0 auto;
+}
+
+.sub-title {
+  line-height: 55px;
+  color: #fff;
+  font-size: 45px;
+  text-align: center;
+  margin: 40px auto 0 auto;
+  font-weight: bold;
+}
+
+.contact-button {
+  display: block;
+  width: 240px;
+  height: 65px;
+  background: #FDD135;
+  
+  margin: 47px auto 160px auto;
+  border: 0;
+  border-radius: 5px;
+}
+
+.contact-button a {
+  color: #fff;
+  font-size: 30px;
+  /*font-weight: bold;*/
+  line-height: 65px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/**********************************************/
+
+.wrapper-service {
+  /*height: 569px;*/
+  /*background: teal;*/
+}
+
+.content-service {
+  margin: 0 25px 98px 25px;
+}
+
+.one-service {
+  float: left;
+  /*width: 284px;*/
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+.one-service .icon {
+  display: block;
+  width: 74px;
+  height: 73px;
+  margin: auto;
+}
+
+.one-service .name {
+  font-size: 18px;
+  color: #000;
+  font-family: Yuehei;
+  margin: 10px auto 20px auto;
+  font-weight: bold;
+}
+
+.one-service .detail {
+  font-size: 14px;
+  /*line-height: 18px;*/
+  color: #777;
+  font-family: Yuehei;
+}
+/**********************************************/
+
+.wrapper-products {
+  /*height: 1218px;*/
+  /*background: tan;*/
+  
+}
+
+.one-product {
+  margin-bottom: 79px;
+}
+
+.one-product .demo {
+  display: block;
+  /*width: 888px;
+  height: 716px;*/
+  max-width: 100%;
+  margin: auto;
+}
+
+.one-product .product-name {
+  height: 38px;
+  line-height: 38px;
+  font-family: Yuehei;
+  font-weight: bold;
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+  margin: 49px auto 29px auto;
+}
+
+.one-product .product-detail {
+  font-family: Yuehei;
+  font-size: 24px;
+  color: #727272;
+  text-align: center;
+  line-height: 32px;
+}
+
+/**********************************************/
+
+.wrapper-aboutus {
+  /*height: 1367px;*/
+  /*background: teal;*/
+}
+
+.company-brif,
+.company-contact {
+  font-size: 24px;
+  font-family: Yuehei;
+  color: #727272;
+}
+
+.company-brif {
+  margin: auto 25px;
+}
+
+.company-contact {
+  margin: 45px 25px;
+  float: left;
+}
+
+.logo {
+  float: right;
+  margin: 45px 25px;
+}
+
+.groupphoto {
+  max-width: 100%;
+}
+
+/**********************************************/
+
+.wrapper-members {
+  /*height: 982px;*/
+  background: #f1f1f1;
+}
+
+.member-container {
+  margin: auto 35px;
+}
+
+.one-member {
+  text-align: center;
+}
+
+.one-member .avatar {
+  display: block;
+  margin: auto;
+}
+
+.one-member .name {
+  font-family: Yuehei;
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: bold;
+  margin: 17px auto 12px auto;
+}
+
+.one-member .position {
+  font-family: Yuehei;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.one-member .person-contact {
+  height: 40px;
+  margin: 11px auto;
+}
+
+.person-contact a {
+  margin: 0 5px;
+}
+
+.ones-intro {
+  height: 197px;
+  font-size: 16px;
+  line-height: 23px;
+  font-family: Yuehei;
+  color: #777;
+}
+.ones-intro p {
+  text-align: center;
+  padding: 87px 0 87px 0;
+}
+
+.friend-business {
+  height: 42px;
+  margin: 44px auto;
+  line-height: 44px;
+  background: rgba(0, 0, 0, 0.2);
+  font-family: Yuehei;
+}
+
+/**********************************************/
+
+.wrapper-contact {
+  /*height: 766px;*/
+  background: teal;
+}
+
+.wrapper-contact .heading {
+  color: #fff;
+}
+.wrapper-contact .vice-heading {
+  color: #c6c6c6;
+}
+
+.left-input,
+.right-input {
+  /*padding: 0 10px;*/
+}
+
+.left-input input {
+  display: block;
+  line-height: 21px;
+  width: 100%;
+  padding: 15px 20px;
+  border: 0;
+  border-radius: 3px;
+  margin-bottom: 28px;
+  font-size: 14px;
+  color: #000;
+  font-family: Yuehei;
+}
+
+.right-input textarea {
+  width: 100%;
+  height: 209px;
+  padding: 15px 20px;
+  border: 0;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #000;
+  font-family: Yuehei;
+  margin-bottom: 28px;
+  resize: none;
+}
+
+.send {
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 30px;
+  width: 240px;
+  height: 56x;
+  line-height: 56px;
+  background-color: #FDD135;
+  font-family: Yuehei;
+  display: block;
+  margin: auto;
+}
+
+.copyright {
+  margin: 109px auto 76px;
+  color: #fff;
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
