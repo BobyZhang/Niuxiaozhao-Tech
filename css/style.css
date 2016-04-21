@@ -11,6 +11,7 @@ body, p {
   padding: 0;
   margin: 0;
   font-family: Yuehei;
+  font-size: 16px;
 }
 
 .clear {
@@ -22,7 +23,7 @@ body, p {
 }
 
 .title {
-  margin: 111px auto 75px auto;
+  margin: 75px auto 75px auto;
   text-align: center;
 }
 
@@ -40,6 +41,29 @@ body, p {
   color: #777;
   margin-bottom: 0;
   font-family: Yuehei;
+}
+
+.nav-button {
+  display: none;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  cursor: pointer;
+}
+
+.icon-bar {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: #fff;
+  margin-bottom: 4px;
+}
+
+.hidden-nav-li {
+  margin-bottom: 30px;
+}
+.hidden-nav-li:hover {
+  background: rgba(255, 255, 255, 0.4);
 }
 
 /**********************************************/
@@ -73,10 +97,6 @@ body, p {
 }
 .nav li {
   padding: 0;
-}
-
-.icon-bar {
-  background: #fff;
 }
 
 .main-title {
@@ -125,7 +145,7 @@ body, p {
 }
 
 .content-service {
-  margin: 0 25px 98px 25px;
+  margin: 0 25px 75px 25px;
 }
 
 .one-service {
@@ -151,7 +171,7 @@ body, p {
 }
 
 .one-service .detail {
-  font-size: 14px;
+  /*font-size: 14px;*/
   /*line-height: 18px;*/
   color: #777;
   font-family: Yuehei;
@@ -160,12 +180,12 @@ body, p {
 
 .wrapper-products {
   /*height: 1218px;*/
-  /*background: tan;*/
+  background-color: rgba(247, 247, 247, 1);
   
 }
 
-.one-product {
-  margin-bottom: 79px;
+.content-products {
+  margin: 0 50px 75px 50px;
 }
 
 .one-product .demo {
@@ -181,7 +201,7 @@ body, p {
   line-height: 38px;
   font-family: Yuehei;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 18px;
   color: #000;
   text-align: center;
   margin: 49px auto 29px auto;
@@ -189,7 +209,7 @@ body, p {
 
 .one-product .product-detail {
   font-family: Yuehei;
-  font-size: 24px;
+  /*font-size: 24px;*/
   color: #727272;
   text-align: center;
   line-height: 32px;
@@ -204,7 +224,7 @@ body, p {
 
 .company-brif,
 .company-contact {
-  font-size: 24px;
+  /*font-size: 24px;*/
   font-family: Yuehei;
   color: #727272;
 }
@@ -240,6 +260,7 @@ body, p {
 
 .one-member {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .one-member .avatar {
@@ -249,7 +270,7 @@ body, p {
 
 .one-member .name {
   font-family: Yuehei;
-  font-size: 25px;
+  font-size: 18px;
   line-height: 32px;
   font-weight: bold;
   margin: 17px auto 12px auto;
@@ -257,7 +278,7 @@ body, p {
 
 .one-member .position {
   font-family: Yuehei;
-  font-size: 14px;
+  /*font-size: 14px;*/
   line-height: 21px;
 }
 
@@ -271,6 +292,7 @@ body, p {
 }
 
 .ones-intro {
+  display: none;
   height: 197px;
   font-size: 16px;
   line-height: 23px;
@@ -317,7 +339,7 @@ body, p {
   border: 0;
   border-radius: 3px;
   margin-bottom: 28px;
-  font-size: 14px;
+  /*font-size: 14px;*/
   color: #000;
   font-family: Yuehei;
 }
@@ -328,7 +350,7 @@ body, p {
   padding: 15px 20px;
   border: 0;
   border-radius: 3px;
-  font-size: 14px;
+  /*font-size: 14px;*/
   color: #000;
   font-family: Yuehei;
   margin-bottom: 28px;
@@ -357,4 +379,57 @@ body, p {
   line-height: 20px;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/***************************************************************
+
+****************************************************************/
+#hidden-nav {
+  display: none;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+  .main-title {
+    font-size: 30px;
+    line-height: 38px;
+    margin: 120px auto 0 auto;
+  }
+  
+  .sub-title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .contact-button {
+    width: 120px;
+    height: 30px;
+    margin-bottom: 120px;
+  }
+  .contact-button a {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .logo {
+    float: left;
+    margin: 0 25px 45px 25px;
+  }
+  .logo img {
+    width: 140px;
+    margin: auto;
+  }
+  
+  #main-nav {
+    display: none;
+  }
+  
+  #hidden-nav {
+    display: none;
+  }
+  
+  .nav-button {
+    display: block;
+  }
 }

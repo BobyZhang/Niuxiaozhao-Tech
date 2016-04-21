@@ -1,21 +1,30 @@
 
 $(document).ready(function () {
-  bgResize();
+  
+  // For nav event
+  $('.nav-button').click(function () {
+    $('#hidden-nav').show();
+  });
+  $('.hidden-nav-li').click(function () {
+    $('#hidden-nav').hide();
+  });
+  
+  bgResize($('#home'), $(".home-background"), 1400, 729);
   $(window).resize(function () {
     // For resize home photo
-    bgResize();
+    bgResize($('#home'), $(".home-background"), 1400, 729);
   })
 })
 
-function bgResize() {
-  var windowsHeight = $('#home').height();
-  var windowsWidth = $('#home').width();
+function bgResize(container, img, initW, initH) {
+  var windowsHeight = container.height();
+  var windowsWidth = container.width();
   console.log(windowsWidth);
   console.log(windowsHeight);
   var windowsScale = windowsWidth / windowsHeight;
 
-  var initWidth = 1400;
-  var initHeight = 729;
+  var initWidth = initW;
+  var initHeight = initH;
   var initScale = initWidth / initHeight;
 
   var finalWidth = 0;
@@ -23,16 +32,16 @@ function bgResize() {
   var tempScale;
 
   if (windowsScale >= initScale) {
-      finalWidth = windowsWidth;
-      tempScale = finalWidth / initWidth;
-      finalHeight = initHeight * tempScale;
+    finalWidth = windowsWidth;
+    tempScale = finalWidth / initWidth;
+    finalHeight = initHeight * tempScale;
   }
   else {
-      finalHeight = windowsHeight;
-      tempScale = finalHeight / initHeight;
-      finalWidth = initWidth * tempScale;
+    finalHeight = windowsHeight;
+    tempScale = finalHeight / initHeight;
+    finalWidth = initWidth * tempScale;
   }
 
-  $(".home-background").width(finalWidth);
-  $(".home-background").height(finalHeight);
+  img.width(finalWidth);
+  img.height(finalHeight);
 }
