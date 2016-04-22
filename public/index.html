@@ -217,12 +217,18 @@
       <div class="content">
         <div class="input-form">
           <div class="left-input col-sm-6 col-xs-12">
-            <input type="text" class="name" placeholder="您的姓名">
-            <input type="text" class="email" placeholder="您的 E-MAIL">
-            <input type="text" class="subject" placeholder="主题">
+            <span class="tips name-tips">* 请输入姓名</span>
+            <input type="text" class="input-name" placeholder="您的姓名">
+            <span class="tips email-tips">* 不合法的邮箱地址</span>
+            <input type="text" class="input-email" placeholder="您的 E-MAIL">
+            <span class="tips subject-tips">* 请输入主题</span>
+            <input type="text" class="input-subject" placeholder="主题">
+            
           </div>
           <div class="right-input col-sm-6 col-xs-12">
-            <textarea placeholder="您的需求或是建议" class=""></textarea>
+            <span class="tips detail-tips">* 请输入需求或是建议</span>
+            <textarea placeholder="您的需求或是建议" class="input-details"></textarea>
+            
           </div>
         </div>
         <input type="button" class="send" value="发    送">

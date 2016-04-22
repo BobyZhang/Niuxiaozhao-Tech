@@ -332,6 +332,7 @@ body, p {
 }
 
 .left-input input {
+  position: relative;
   display: block;
   line-height: 21px;
   width: 100%;
@@ -344,7 +345,24 @@ body, p {
   font-family: Yuehei;
 }
 
+.input-form .tips {
+  color: red;
+  font-size: 14px;
+  position: absolute;
+  display: none;
+}
+.name-tips {
+  top: 54px;
+}
+.email-tips {
+  top: 133px;
+}
+.subject-tips {
+  top: 212px;
+}
+
 .right-input textarea {
+  position: relative;
   width: 100%;
   height: 209px;
   padding: 15px 20px;
@@ -355,6 +373,10 @@ body, p {
   font-family: Yuehei;
   margin-bottom: 28px;
   resize: none;
+}
+
+.detail-tips {
+  top: 212px;
 }
 
 .send {
@@ -378,7 +400,7 @@ body, p {
   height: 20px;
   line-height: 20px;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
 }
 
 /***************************************************************
