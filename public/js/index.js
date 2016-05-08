@@ -10,9 +10,11 @@ $(document).ready(function () {
   });
   
   bgResize($('#home'), $(".home-background"), 1400, 729);
+  bgResize($('#contact'), $('.contact-background'), 1402, 767);
   $(window).resize(function () {
     // For resize home photo
     bgResize($('#home'), $(".home-background"), 1400, 729);
+    bgResize($('#contact'), $('.contact-background'), 1402, 767);
   })
   
   $('.send').click(function () {

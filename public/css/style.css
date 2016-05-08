@@ -255,15 +255,17 @@ body, p {
 }
 
 .member-container {
-  margin: auto 35px;
+  margin: 0 35px 70px 35px;
 }
 
 .one-member {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .one-member .avatar {
+  width: 220px;
+  border-radius: 50%;
   display: block;
   margin: auto;
 }
@@ -313,10 +315,16 @@ body, p {
 }
 
 /**********************************************/
-
 .wrapper-contact {
   /*height: 766px;*/
-  background: teal;
+  position: relative;
+}
+
+.contact-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
 }
 
 .wrapper-contact .heading {
