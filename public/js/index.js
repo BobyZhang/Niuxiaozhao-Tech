@@ -19,12 +19,12 @@ $(document).ready(function () {
   
   $('.send').click(function () {
     $('.tips').hide();
-    // restForm($('.input-form'));
+    
     submitForm();
   })
 })
 
-function restForm(form) {
+function resetForm(form) {
   // clear all input
   var allInputs = form.find('input');
   for (var i = 0; i < allInputs.length; ++i) {
@@ -85,7 +85,9 @@ function submitForm() {
   .done(function (resData) {
     var res = JSON.parse(resData);
     if (res.success == 1) {
-      alert("发送成功！");
+      alert("发送成功，感谢您的反馈！");
+      // reset the form
+      resetForm($('.input-form'));
     }
     else {
       alert("发送失败，稍后再试！");

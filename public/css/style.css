@@ -318,6 +318,7 @@ body, p {
 .wrapper-contact {
   /*height: 766px;*/
   position: relative;
+  overflow: hidden;
 }
 
 .contact-background {
@@ -402,7 +403,7 @@ body, p {
 }
 
 .copyright {
-  margin: 109px auto 76px;
+  margin: 109px auto 48px;
   color: #fff;
   font-size: 14px;
   height: 20px;
