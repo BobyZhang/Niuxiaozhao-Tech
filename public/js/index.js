@@ -78,7 +78,7 @@ function submitForm() {
   }
   
   $.ajax({
-    url: '/feedback',
+    url: '/api/feedback',
     type: 'POST',
     data: submitData
   })
